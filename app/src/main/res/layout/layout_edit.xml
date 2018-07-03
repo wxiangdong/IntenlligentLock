@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvAlertDialogTitle"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="tile"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:textSize="16sp"
+        android:id="@+id/dialog_message"
+        android:layout_gravity="center"
+        android:text="message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/edit_ps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:maxLength="6"
+            android:hint=""
+            android:textSize="14sp"/>
+
+        <CheckBox
+            android:id="@+id/edit_switch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="top"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/selector_password"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+        <Button
+            android:id="@+id/btnAlertDialogNegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="取消"
+            android:background="@null"
+            android:layout_weight="1"/>
+
+        <View
+            android:background="#000000"
+            android:layout_marginTop="13dp"
+            android:layout_width="1dp"
+            android:layout_height="20dp"/>
+        <Button
+            android:id="@+id/btnAlertDialogPositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="确定"
+            android:background="@null"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
